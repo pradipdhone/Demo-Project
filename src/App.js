@@ -11,6 +11,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./components/Home";
+import News from "./components/News";
 
 function App() {
 
@@ -32,7 +33,7 @@ function App() {
       <Routes>
           <Route path="/courses" element={ <Courses />} />
           <Route path="/" element={<Dashboard/>}/>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/news" element={<News/>}/>
       </Routes>
   
       
