@@ -3,15 +3,15 @@ import { IconButton, InputBase } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import '../App.css'
 import { useNavigate } from 'react-router-dom';
-import coursesData from '../courses.json'
-import Course from "./Course";
+import meditationData from '../meditation.json'
+import SingleMeditation from "./SingleMeditation";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function Courses() {
+export default function Meditations() {
 
     const navigate = useNavigate();
-    const [courses, setCourses] = useState([])
+    const [meditations, setMeditations] = useState([])
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -20,14 +20,15 @@ export default function Courses() {
       }
 
       useEffect(() => {
-        setCourses(coursesData)
+        console.log("meditationData", meditationData)
+        setMeditations(meditationData.result)
       }, [])
 
-      const filteredCourses = courses.filter(course =>
-        course.title.toLowerCase().includes(searchQuery.toLowerCase())
+      const filteredMeditations = meditations.filter(meditation =>
+        meditation.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
 
-
+console.log("filteredMeditations", filteredMeditations)
   return (
     <>
         <div className="header">
@@ -68,7 +69,7 @@ export default function Courses() {
         margin: 0,
       }}
     >
-      <b>Courses</b>
+      <b>Meditations</b>
     </h4>
 
     {/* Placeholder for right side to balance spacing */}
@@ -113,8 +114,8 @@ export default function Courses() {
         className="course_data_profile my-3 d-flex flex-wrap"
         style={{ gap: "20px" }}
       >
-        {filteredCourses && filteredCourses.length > 0 ? (
-          filteredCourses.map((course, index) => (
+        {filteredMeditations && filteredMeditations.length > 0 ? (
+          filteredMeditations.map((meditation, index) => (
             <div
               key={index}
               className="course-wrapper"
@@ -123,7 +124,7 @@ export default function Courses() {
                 minWidth: "200px", // ensure minimum width
               }}
             >
-              <Course key={course._id} course={course} />
+              <SingleMeditation key={meditation._id} meditation={meditation} />
             </div>
           ))
         ) : (
@@ -135,7 +136,7 @@ export default function Courses() {
             width: "100%"
           }}>
             <h4 className="my-3" style={{ color: "#E82E01" }}>
-              No courses available
+              No meditations available
             </h4>
           </div>
         )}

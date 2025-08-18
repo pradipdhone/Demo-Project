@@ -1,45 +1,35 @@
 import logo from "./logo.svg";
 import "./App.css";
+import LoginButton from "./components/LoginButton";
+import LogoutButton from "./components/LogoutButton";
+import Profile from "./components/Profile";
+import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
-import Courses from "./components/courses";
-import React, { useState } from "react";
-import Dashboard from "./components/dashboard";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import Home from "./components/Home";
-import News from "./components/News";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Journey from "./components/Journey";
+import Courses from "./components/Courses";
+import SingleMeditation from "./components/SingleMeditation";
+import Meditations from "./components/Meditations";
 
 function App() {
-
-  const [mode, setMode] = useState("light")
-
-  const toggleMode = () => {
-    if(mode === "light") {
-      setMode("dark")
-    } else {
-      setMode("light")
-    }
-  }
-
   return (
-    <>
-    <Router>
     <div className="App">
-      <Navbar mode={mode} toggleMode={toggleMode}/>
+      {/* <header className="App-header"> */}
+      <Router>
+      <Navbar />
       <Routes>
-          <Route path="/courses" element={ <Courses />} />
-          <Route path="/" element={<Dashboard/>}/>
-          <Route path="/news" element={<News/>}/>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/my-journey" element={<Journey />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/meditations" element={<Meditations />} />
       </Routes>
-  
-      
+      </Router>
+      {/* <LoginButton/>
+        <LogoutButton/>
+        <Profile /> */}
+      {/* </header> */}
     </div>
-    </Router>
-    </>
   );
 }
 

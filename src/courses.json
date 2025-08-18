@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "6836e4b63af6aaeaf0a51320",
+        "title": "Foundations of Artificial Intelligence",
+        "description": "Artificial Intelligence (AI) is no longer a concept confined to science fiction—it's a driving force behind transformative technologies reshaping every sector of society. From personalized recommendations to autonomous vehicles and intelligent virtual assistants, AI is revolutionizing how we live and work. \"Foundations of Artificial Intelligence\" is a comprehensive, hands-on course designed to demystify AI and equip learners with the foundational skills needed to understand and build intelligent systems.\nThis course offers a deep yet beginner-friendly exploration into the fundamental concepts, techniques, and real-world applications of AI. Whether you're a student, developer, data enthusiast, or working professional looking to transition into the AI field, this course lays down the essential knowledge blocks for your journey.\nWe begin with an introduction to what AI really is—covering its history, the various types of intelligence, and how AI compares and overlaps with machine learning (ML) and deep learning (DL). As the course progresses, you'll dive into core areas including machine learning paradigms (supervised, unsupervised, and reinforcement learning), neural networks, and the critical ethical considerations that must be addressed when designing AI systems.\nBut theory alone isn't enough. This course blends conceptual teaching with practical, real-world case studies to show you how AI is applied in industries such as healthcare, finance, transportation, and e-commerce. You’ll also learn how to evaluate models, deploy them using modern tools like Docker and cloud platforms, and maintain them through performance monitoring and drift detection.\nWe also emphasize responsible AI development, helping you understand bias, fairness, transparency, and accountability, so you're not just building powerful models—but trustworthy ones too.\nBy the end of this course, you'll not only have a solid foundation in AI principles and practices, but you’ll also be prepared to pursue more specialized topics like computer vision, natural language processing, and reinforcement learning.\n\n#What You’ll Learn\n- The historical development and evolution of AI and its key milestones\n- Differences and relationships between AI, Machine Learning, and Deep Learning\n- Practical understanding of supervised and unsupervised learning algorithms\n- Key metrics and tools to evaluate model performance\n- Core neural network structures and training mechanisms\n- How AI is transforming industries such as healthcare, finance, and transportation\n- Deployment techniques for AI models, including REST APIs and cloud services\n- Ethical considerations: bias, transparency, and responsible AI\n\n#Who This Course is For\n- Aspiring AI/ML developers and data scientists\n- Software engineers transitioning to AI roles\n- Tech-savvy students and graduates\n- Project managers and product leads working with AI teams\n- Anyone curious about how AI works under the hood",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/c5a7d36c-327c-446d-9a23-9f116f5781b2.jpeg",
+        "type": "free",
+        "status": "not_started",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/1d9f2295-ffcd-4dce-a4bf-6fb7070df656.mp4"
+    },
+    {
+        "_id": "683079bfd69845f7ea6c016a",
+        "title": "Introduction to Digital Creativity",
+        "description": "This course introduces students to the fundamentals of digital creativity, exploring how technology can be used to create art, design, and multimedia content. Students will learn about digital tools, creative thinking, and the process of producing digital projects.",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/19eddcef-d52b-4414-8443-eb706894b4fe.jpeg",
+        "type": "free",
+        "status": "not_started",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/f4e2d3f1-c916-4446-b181-eb35930857fc.mp4"
+    },
+    {
+        "_id": "682b0ecbf9c792680c90a78b",
+        "title": "Jumanji: Welcome to the Jungle",
+        "description": "In 1969, in a small town in New Hampshire, a twelve-year-old boy named Alan Parrish finds a Victorian-era board game called \"Jumanji\", and starts to play it ",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/2aeca6bb-ff12-417e-a798-79d21f9b3d8c.jpeg",
+        "type": "free",
+        "status": "not_started",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/3e5aba74-f4c0-497c-925b-10c622bfa66c.mp4"
+    },
+    {
+        "_id": "682318fe1c71a1761d872920",
+        "title": "The Group Chat Here’s the update:",
+        "description": "The Group Chat",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/1cc47c1d-31b0-4c63-8648-af53f6eba10c.jpeg",
+        "type": "free",
+        "status": "completed",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/7c11f2bb-2d64-440c-8183-25d671c5514d.mp4"
+    },
+    {
+        "_id": "673f66e465cff18e7b24fd50",
+        "title": "Self-Guided Nonprofit Fundraiser's Insider Playbook",
+        "description": "How to build your playbook",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/0701b6d6-cccb-425a-aad6-aa6d39cfce25.jpeg",
+        "type": "paid",
+        "status": "in_progress",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/faaeb1bd-77cd-4477-8cba-af63af3ce44d.mp4"
+    },
+    {
+        "_id": "66f288f1490a03ed7b764eb5",
+        "title": "Live Group Training: Nonprofit Fundraiser's Insider Playbook",
+        "description": "Get access to our Nonprofit Funderaiser's Insider Playbook training as well as access to our live webinar training sessions starting in January of 2025.",
+        "type": "paid",
+        "thumbnail": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/courses/thumbnails/83db3456-f988-4b3c-aa40-8531077bbf94.jpeg",
+        "status": "not_started",
+        "mediaUrl": "https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_development/sections/videos/36a75d57-5ad8-4d71-9b5d-1700825b9b87.mp4"
+    }
+]

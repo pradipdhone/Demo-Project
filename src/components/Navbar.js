@@ -1,109 +1,39 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState, useRef, useEffect} from 'react'
+import DragHandleIcon from '@mui/icons-material/DragHandle';
+import MenuIcon from '@mui/icons-material/Menu';
+import ProfileSidebar from './ProfileSidebar';
+import '../App.css'
 
-export default function Navbar(props) {
+export default function Navbar() {
+
+    const [showSidebar, setShowSidebar] = useState(false);
+  const toggleSidebar = () => setShowSidebar(!showSidebar);
+
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-    <div className="container-fluid">
-      <Link
-        className="navbar-brand"
-        to="/"
-      >
-        Dashboard
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <Link
-              className="nav-link"
-              aria-current="page"
-              to="/news"
-            >
-              News
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              className="nav-link"
-              to="/courses"
-            >
-              Courses
-            </Link>
-          </li>
-          <li className="nav-item dropdown">
-            <Link
-              className="nav-link dropdown-toggle"
-              to="/services"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
-            </Link>
-            <ul className="dropdown-menu">
-              <li>
-                <Link
-                  className="dropdown-item"
-                  to="/action"
-                >
-                  Action
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="dropdown-item"
-                  to="/another action"
-                >
-                  Another action
-                </Link>
-              </li>
-              <li>
-                <hr className="dropdown-divider" />
-              </li>
-              <li>
-                <Link
-                  className="dropdown-item"
-                  to="/something else here"
-                >
-                  Something else here
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link disabled" aria-disabled="true">
-              Disabled
-            </Link>
-          </li>
-        </ul>
-        <div className="form-check form-switch">
-  <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
-  <label className="form-check-label" htmlFor="switchCheckDefault" style={{color: 'white'}}>Enable Mode</label>
-</div>
-        <form className="d-flex mx-1" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button className="btn btn-primary" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+    <>
+<nav className="navbar navbar-expand-lg bg-black navbar-dark py-4">
+  <div className="container-fluid justify-content-center d-flex position-relative">
+    
+    {/* Centered logo */}
+    <div className="position-absolute start-50 translate-middle-x">
+      <img
+        className="header_logo"
+        src="https://devshield-ic-global-bucket.us-southeast-1.linodeobjects.com/ic_mof/assets/images/man_on_fire_white.png"
+        alt="logo"
+        style={{ height: '45px' }}
+      />
     </div>
-  </nav>
+
+    {/* Right icon */}
+    <div className="ms-auto">
+      <button onClick={toggleSidebar} style={{ border: "none", outline: "none", background: "transparent", padding: 0 }}>
+        <MenuIcon style={{ color: "white", fontSize: '28px'}} />
+      </button>
+    </div>
+    
+  </div>
+</nav>
+    <ProfileSidebar isOpen={showSidebar} onClose={toggleSidebar} />
+    </>
   )
 }
